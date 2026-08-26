@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos — Servidor dos CLTs</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    <meta name="theme-color" content="#0a0c12">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="img/logo.jpg" alt="Servidor dos CLTs" class="nav-icon">
+                <span class="nav-title">SERVIDOR DOS <span class="highlight">CLTs</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comandos.html" class="active">Comandos</a></li>
+                <li><a href="regras.html">Regras</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="comandos-hero">
+            <h1>Comandos do Servidor</h1>
+            <p>Referência rápida dos comandos disponíveis no Servidor dos CLTs</p>
+        </section>
+
+        <section class="comandos-section">
+            <div class="container">
+
+                <!-- EssentialsX -->
+                <div class="plugin-block">
+                    <h2 class="plugin-title">⚡ EssentialsX</h2>
+                    <div class="commands-grid">
+                        <div class="cmd-card">
+                            <div class="cmd-name">/spawn</div>
+                            <div class="cmd-desc">Volta para o spawn do servidor.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/home</div>
+                            <div class="cmd-desc">Teleportar para a sua casa.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/sethome [nome]</div>
+                            <div class="cmd-desc">Define uma casa no local atual.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/tpa [jogador]</div>
+                            <div class="cmd-desc">Pede teleporte para outro jogador.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/tpaccept</div>
+                            <div class="cmd-desc">Aceita um pedido de teleporte.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/pay [jogador] [valor]</div>
+                            <div class="cmd-desc">Transfere dinheiro para outro jogador.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/balance</div>
+                            <div class="cmd-desc">Mostra o seu saldo atual.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/msg [jogador] [msg]</div>
+                            <div class="cmd-desc">Envia mensagem privada.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GriefPrevention -->
+                <div class="plugin-block">
+                    <h2 class="plugin-title">🛡️ Proteção de Terreno</h2>
+                    <div class="commands-grid">
+                        <div class="cmd-card">
+                            <div class="cmd-name">/claim</div>
+                            <div class="cmd-desc">Cria uma proteção no local atual.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/abandonclaim</div>
+                            <div class="cmd-desc">Remove a proteção onde você está.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/trust [jogador]</div>
+                            <div class="cmd-desc">Dá permissão de construção para alguém.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/untrust [jogador]</div>
+                            <div class="cmd-desc">Remove a permissão de um jogador.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/trustlist</div>
+                            <div class="cmd-desc">Lista quem tem permissão na claim.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/claims list</div>
+                            <div class="cmd-desc">Mostra todas as suas proteções.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loja / Economia -->
+                <div class="plugin-block">
+                    <h2 class="plugin-title">🛒 Loja & Economia</h2>
+                    <div class="commands-grid">
+                        <div class="cmd-card">
+                            <div class="cmd-name">/shop</div>
+                            <div class="cmd-desc">Abre a loja principal do servidor.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/sell</div>
+                            <div class="cmd-desc">Vende o item que está na mão.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/bal</div>
+                            <div class="cmd-desc">Verifica seu dinheiro.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/baltop</div>
+                            <div class="cmd-desc">Ranking dos mais ricos do servidor.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diversos -->
+                <div class="plugin-block">
+                    <h2 class="plugin-title">📌 Diversos</h2>
+                    <div class="commands-grid">
+                        <div class="cmd-card">
+                            <div class="cmd-name">/warp [nome]</div>
+                            <div class="cmd-desc">Teleportar para um warp do servidor.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/warps</div>
+                            <div class="cmd-desc">Lista todos os warps disponíveis.</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/kit</div>
+                            <div class="cmd-desc">Recebe um kit básico (se disponível).</div>
+                        </div>
+                        <div class="cmd-card">
+                            <div class="cmd-name">/afk</div>
+                            <div class="cmd-desc">Marca você como ausente.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="img/logo.jpg" alt="Servidor dos CLTs" class="footer-logo">
+            <p class="footer-title">SERVIDOR DOS CLTs</p>
+            <p>&copy; 2026 Servidor dos CLTs. Todos os direitos reservados.</p>
+            <p class="footer-note">Não afiliado à Mojang Studios ou Microsoft.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

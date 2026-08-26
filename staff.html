@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff — Servidor dos CLTs</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    <meta name="theme-color" content="#0a0c12">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .staff-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .staff-card:hover {
+            border-color: var(--neon);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.35), 0 0 20px rgba(0,230,118,0.1);
+        }
+        .staff-avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--neon), var(--gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            margin: 0 auto 1rem;
+            border: 3px solid var(--neon);
+            box-shadow: 0 0 20px var(--neon-glow);
+        }
+        .staff-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.3rem;
+        }
+        .staff-role {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-bottom: 0.8rem;
+        }
+        .role-owner {
+            background: rgba(255, 193, 7, 0.15);
+            color: var(--gold);
+            border: 1px solid rgba(255, 193, 7, 0.35);
+        }
+        .role-admin {
+            background: rgba(0, 230, 118, 0.15);
+            color: var(--neon);
+            border: 1px solid rgba(0, 230, 118, 0.35);
+        }
+        .role-mod {
+            background: rgba(100, 180, 255, 0.15);
+            color: #64b4ff;
+            border: 1px solid rgba(100, 180, 255, 0.35);
+        }
+        .staff-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        .staff-note {
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .staff-note a {
+            color: var(--neon);
+            text-decoration: none;
+        }
+        .staff-note a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="img/logo.jpg" alt="Servidor dos CLTs" class="nav-icon">
+                <span class="nav-title">SERVIDOR DOS <span class="highlight">CLTs</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comandos.html">Comandos</a></li>
+                <li><a href="regras.html">Regras</a></li>
+                <li><a href="staff.html" class="active">Staff</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="comandos-hero">
+            <h1>Equipe do Servidor</h1>
+            <p>Conheça quem mantém o Servidor dos CLTs funcionando</p>
+        </section>
+
+        <section class="comandos-section">
+            <div class="container">
+                <div class="staff-grid">
+
+                    <div class="staff-card">
+                        <div class="staff-avatar">👑</div>
+                        <div class="staff-name">Dono</div>
+                        <div class="staff-role role-owner">OWNER</div>
+                        <p class="staff-desc">Fundador e responsável geral do servidor. Qualquer dúvida ou problema sério, chame no WhatsApp.</p>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-avatar">⚡</div>
+                        <div class="staff-name">Admins</div>
+                        <div class="staff-role role-admin">ADMIN</div>
+                        <p class="staff-desc">Cuidam da moderação, eventos e organização geral do servidor.</p>
+                    </div>
+
+                    <div class="staff-card">
+                        <div class="staff-avatar">🛡️</div>
+                        <div class="staff-name">Moderadores</div>
+                        <div class="staff-role role-mod">MOD</div>
+                        <p class="staff-desc">Ajudam a manter o chat limpo e resolvem conflitos entre jogadores.</p>
+                    </div>
+
+                </div>
+
+                <p class="staff-note">
+                    Quer fazer parte da staff? Entre no 
+                    <a href="https://chat.whatsapp.com/Iogxjz1xjlr95EqP1AW3XE" target="_blank">grupo do WhatsApp</a> 
+                    e fale com a gente!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="img/logo.jpg" alt="Servidor dos CLTs" class="footer-logo">
+            <p class="footer-title">SERVIDOR DOS CLTs</p>
+            <p>&copy; 2026 Servidor dos CLTs. Todos os direitos reservados.</p>
+            <p class="footer-note">Não afiliado à Mojang Studios ou Microsoft.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
